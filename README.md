@@ -22,3 +22,12 @@ Describe: assignId()
 Test: "It should assign an ID whenever a new account is made, incrementing by +1."
 Code: this.accountId += 1; return this.accountId;
 Expected output: bankAccount[1], bankAccount[2]
+
+Describe: "depositToBalance(amount)"
+
+Test: "It should return the sum of the current balance added to the amount the user inputs."
+Code: depositToBalance(546){
+  this.balance += amount;
+  return this.balance;
+};
+Expected Output: 546

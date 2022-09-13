@@ -5,6 +5,7 @@ function BankAccount()  {
 }
 
 BankAccount.prototype.addAccount = function(bankUser) {
+  bankUser.id = this.assignID();
   this.bankUsers[bankUser.id] = bankUser;
 };
 
@@ -14,8 +15,12 @@ BankAccount.prototype.assignID = function() {
 }
 
 // Business Logic for Bank User
-function BankUser(firstName,lastName,balance)  {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.balance = balance;
+function BankUser(userName,balance)  {
+  this.userName = userName;
+  this.balance = parseInt(balance);
+}
+
+BankUser.prototype.depositToBalance = function(depositAmount)  {
+  this.balance += depositAmount;
+  return this.balance;
 }
