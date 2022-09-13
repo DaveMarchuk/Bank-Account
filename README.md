@@ -31,3 +31,12 @@ Code: depositToBalance(546){
   return this.balance;
 };
 Expected Output: 546
+
+Describe: "withdrawFromBalance(amount)"
+
+Test: "It should return the subtracted version of the current balance."
+Code: user1.depositToBalance(46){
+  this.balance -= 46;
+  return this.balance;
+};
+Expected Output: 500

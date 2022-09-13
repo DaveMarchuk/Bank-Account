@@ -24,3 +24,8 @@ BankUser.prototype.depositToBalance = function(depositAmount)  {
   this.balance += depositAmount;
   return this.balance;
 }
+
+BankUser.prototype.withdrawFromBalance = function(withdrawAmount) {
+  this.balance -= withdrawAmount;
+  return this.balance;
+}
