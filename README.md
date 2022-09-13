@@ -16,3 +16,9 @@ Test: "It should add user's account into the list of bank accounts."
 Code: account.addAccount(bankUser1)
 account;
 Expected Output: "John Smith, $3.00"
+
+Describe: assignId()
+
+Test: "It should assign an ID whenever a new account is made, incrementing by +1."
+Code: this.accountId += 1; return this.accountId;
+Expected output: bankAccount[1], bankAccount[2]
