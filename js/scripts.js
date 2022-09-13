@@ -4,7 +4,9 @@ function BankAccount()  {
   this.bankUsers = {};
 }
 
-
+BankAccount.prototype.addAccount = function(bankUser) {
+  this.bankUsers[bankUser.id] = bankUser;
+};
 
 // Business Logic for Bank User
 function BankUser(firstName,lastName,balance)  {
