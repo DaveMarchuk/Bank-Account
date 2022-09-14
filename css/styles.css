@@ -1,0 +1,23 @@
+.body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+  background-color: rgb(231, 231, 231);
+}
+
+.hidden {
+  display: none;
+}
+
+.right-container {
+  background-color: lightblue;
+  width: 345px;
+  padding: 12px;
+  margin: auto;
+}
+.left-container {
+  background-color: rgb(202, 202, 251);
+  width: 345px;
+  padding: 12px;
+  margin: auto;
+}
+
